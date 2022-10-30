@@ -22,10 +22,12 @@ import java.util.Calendar;
 
 public class BuatPertemuan extends DialogFragment implements View.OnClickListener {
 
+    private Button buttonSimpan;
     private TextView textViewTime;
     private TextView textViewDate;
     private DatePickerDialog.OnDateSetListener dateSetListener;
     private int hour, minute;
+
 
     public BuatPertemuan() {
         //Required empty public constuctor
@@ -38,9 +40,10 @@ public class BuatPertemuan extends DialogFragment implements View.OnClickListene
         //Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.buatpertemuan_fragment, container, false);
 
-
+        this.buttonSimpan = view.findViewById(R.id.button_Simpan);
         this.textViewTime = view.findViewById(R.id.tvTime);
         this.textViewDate = view.findViewById(R.id.et_tgl);
+        this.buttonSimpan.setOnClickListener(this);
         this.textViewTime.setOnClickListener(this);
         this.textViewDate.setOnClickListener(this);
 
@@ -95,7 +98,9 @@ public class BuatPertemuan extends DialogFragment implements View.OnClickListene
         this.textViewTime.setText("");
 
         DialogFragment date = new BuatPertemuan();
-
+        if(view == this.buttonSimpan){
+            ((MainActivity)getActivity()).changePage(4);
+        }
 
     }
 

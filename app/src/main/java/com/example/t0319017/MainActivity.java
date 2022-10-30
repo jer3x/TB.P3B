@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
     private TimePickerFragment timePickerFragment;
     private BuatPertemuan buatPertemuan;
+    private BuatPertemuanDial buatPertemuanDial;
 
     private Toolbar toolbar;
     private DrawerLayout drawer;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         this.fragmentManager = this.getSupportFragmentManager();
         this.timePickerFragment = TimePickerFragment.newInstance();
         this.buatPertemuan = buatPertemuan.newInstance();
+        this.buatPertemuanDial = BuatPertemuanDial.newInstance();
 
 
         //3. Instantiate FragmentManager
@@ -95,6 +97,11 @@ public class MainActivity extends AppCompatActivity {
             if (this.daftarDokterFragment.isAdded()) {
                 ft.hide(this.daftarDokterFragment);
             }
+        } else if(page == 4){
+            if (this.buatPertemuanDial.isAdded()) {
+                ft.show(this.buatPertemuanDial);
+                ft.hide(this.mainFragment);
+            }
         }
         ft.commit();
         this.drawer.closeDrawers();
@@ -104,8 +111,7 @@ public class MainActivity extends AppCompatActivity {
         this.moveTaskToBack(true);
         this.finish();
     }
-
-
 }
+
 
 
