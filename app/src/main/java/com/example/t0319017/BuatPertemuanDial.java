@@ -16,6 +16,11 @@ public class BuatPertemuanDial extends Fragment implements View.OnClickListener 
 
     Button dial;
 
+    public BuatPertemuanDial() {
+        //Required empty public constuctor
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //Inflate the layout for this fragment
@@ -27,8 +32,8 @@ public class BuatPertemuanDial extends Fragment implements View.OnClickListener 
         return view;
     }
     public void onClick(View view){
-        Intent intentCall = new Intent(Intent.ACTION_CALL);
-        intentCall.setData(Uri.parse("tel:12345678"));
+        Intent intentCall = new Intent(Intent.ACTION_DIAL);
+        intentCall.setData(Uri.parse("tel:6181901017"));
         startActivity(intentCall);
     }
 

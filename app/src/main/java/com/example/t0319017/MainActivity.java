@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuan.isAdded()) {
                 ft.hide(this.buatPertemuan);
             }
+            if (this.buatPertemuanDial.isAdded()) {
+                ft.hide(this.buatPertemuanDial);
+            }
         } else if (page == 2) {
             if (this.daftarDokterFragment.isAdded()) {
                 ft.show(this.daftarDokterFragment);
@@ -82,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (this.mainFragment.isAdded()) {
                 ft.hide(this.mainFragment);
+            }
+            if (this.buatPertemuanDial.isAdded()) {
+                ft.hide(this.buatPertemuanDial);
             }
         } else if (page == 3) {
             if (this.buatPertemuan.isAdded()) {
@@ -97,9 +103,23 @@ public class MainActivity extends AppCompatActivity {
             if (this.daftarDokterFragment.isAdded()) {
                 ft.hide(this.daftarDokterFragment);
             }
-        } else if(page == 4){
+            if (this.buatPertemuanDial.isAdded()) {
+                ft.hide(this.buatPertemuanDial);
+            }
+        } else if (page == 4){
             if (this.buatPertemuanDial.isAdded()) {
                 ft.show(this.buatPertemuanDial);
+            } else {
+                ft.add(R.id.fragment_container, this.buatPertemuanDial)
+                        .addToBackStack(null);
+            }
+            if (this.buatPertemuan.isAdded()) {
+                ft.hide(this.buatPertemuan);
+            }
+            if (this.daftarDokterFragment.isAdded()) {
+                ft.hide(this.daftarDokterFragment);
+            }
+            if (this.mainFragment.isAdded()) {
                 ft.hide(this.mainFragment);
             }
         }
