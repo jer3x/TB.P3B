@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         this.drawer.addDrawerListener(abdt);
         abdt.syncState();
 
-        if(savedInstanceState==null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DaftarDokterFragment()).commit();
-        }
+//        if(savedInstanceState==null){
+//            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DaftarDokterFragment()).commit();
+//        }
 
     }
 
@@ -79,9 +79,6 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
-            if (this.daftarDokterFragment.isAdded()) {
-                ft.hide(this.daftarDokterFragment);
-            }
         } else if (page == 2) {
             if (this.daftarDokterFragment.isAdded()) {
                 ft.show(this.daftarDokterFragment);
@@ -97,9 +94,6 @@ public class MainActivity extends AppCompatActivity {
             }
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
-            }
-            if (this.daftarDokterFragment.isAdded()) {
-                ft.hide(this.daftarDokterFragment);
             }
         } else if (page == 3) {
             if (this.buatPertemuan.isAdded()) {
@@ -118,9 +112,6 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
-            if (this.daftarDokterFragment.isAdded()) {
-                ft.hide(this.daftarDokterFragment);
-            }
         } else if (page == 4){
             if (this.buatPertemuanDial.isAdded()) {
                 ft.show(this.buatPertemuanDial);
@@ -136,9 +127,6 @@ public class MainActivity extends AppCompatActivity {
             }
             if (this.mainFragment.isAdded()) {
                 ft.hide(this.mainFragment);
-            }
-            if (this.daftarDokterFragment.isAdded()) {
-                ft.hide(this.daftarDokterFragment);
             }
         }
         ft.commit();

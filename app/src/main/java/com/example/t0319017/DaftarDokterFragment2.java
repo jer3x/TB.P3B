@@ -17,34 +17,35 @@ import androidx.fragment.app.Fragment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DaftarDokterFragment extends Fragment implements AdapterView.OnClickListener {
+public class DaftarDokterFragment2 extends Fragment implements AdapterView.OnClickListener {
 
     private ListView listView;
     private ListView listView2;
     private SearchView searchView;
-    private ArrayAdapter<String> adapter;
+    private ArrayAdapter<String> adapter2;
+    private AdapterDok adapterDok;
 
-    String[] lst = {"Dr Budi", "Dr Ridwan"};
+    String[] lst2 = {"Ahli Tulang", "Ahli Gigi"};
 
-    public DaftarDokterFragment(){
+    public DaftarDokterFragment2(){
         //Required empty public constuctor
     }
 
-    public static DaftarDokterFragment newInstance() {
-        DaftarDokterFragment fragment = new DaftarDokterFragment();
-        return fragment;
+    public static DaftarDokterFragment2 newInstance() {
+        DaftarDokterFragment2 fragment2 = new DaftarDokterFragment2();
+        return fragment2;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.daftardokter, container, false);
+        View view = inflater.inflate(R.layout.bidangdokter, container, false);
 
 
-        ListView listView = view.findViewById(R.id.text_title);
-        adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1,lst);
-        listView.setAdapter(adapter);
+        ListView listView = view.findViewById(R.id.textbid);
+        adapter2 = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_2,lst2);
+        listView.setAdapter(adapter2);
         return view;
 
     }
