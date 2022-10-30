@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!--    &lt;!&ndash;Toolbar&ndash;&gt;-->
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="?attr/actionBarSize"-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:elevation="4dp"-->
+    <!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!--Home-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+
+        <!--Pertemuan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/pertemuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERTEMUAN"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+
+        <!--Dokter-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/dokter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOKTER"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+
+        <!--Exit-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

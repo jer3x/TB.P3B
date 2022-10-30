@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rumah Sakit Kembali</string>
+    <string name="inputsometext">Input some text</string>
+    <string name="clickme">Click Me</string>
+    <string name="second_fragment_text">second fragment text</string>
+    <string name="home">home</string>
+    <string name="page2">page2</string>
+    <string name="exit">exit</string>
+    <string name="right_drawer">This is Right Drawer</string>
+    <string name="openDrawer">null</string>
+    <string name="closeDrawer">null</string>
+
+</resources>
