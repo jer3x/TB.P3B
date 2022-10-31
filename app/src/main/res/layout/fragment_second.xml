@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/second_fragment_text"
+        android:text="@string/rumah_sakit_cepat_kembali_siap_melayani_mu"
         android:id="@+id/fl_fs"
 
         >

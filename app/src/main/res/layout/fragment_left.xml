@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
-            <TextView
+            <Button
                 android:id="@+id/home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
-            <TextView
+            <Button
                 android:id="@+id/pertemuan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
-            <TextView
+            <Button
                 android:id="@+id/dokter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
-            <TextView
+            <Button
                 android:id="@+id/exit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                 android:paddingLeft="10dp"
                 android:paddingBottom="20dp">
 
-            </TextView>
+            </Button>
         </LinearLayout>
 
     </LinearLayout>

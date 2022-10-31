@@ -1,148 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
-
-    <!--    &lt;!&ndash;Toolbar&ndash;&gt;-->
-    <!--    <androidx.appcompat.widget.Toolbar-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="?attr/actionBarSize"-->
-    <!--        android:id="@+id/toolbar"-->
-    <!--        android:background="?attr/colorPrimary"-->
-    <!--        android:elevation="4dp"-->
-    <!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10px">
 
 
-    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
+
+    <LinearLayout
+        android:id="@+id/ll_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-
         >
 
-        <!--Dokter 1-->
-        <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:id="@+id/dokter1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="dr Anton "
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:paddingLeft="10dp"
-                android:paddingBottom="20dp"/>
-
-            <TextView
-                android:id="@+id/jenisDokter1"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="Jantung"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                >
-
-            </TextView>
-
-        </LinearLayout>
-
-        <!--Dokter 2-->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:text="title"
             >
-            <TextView
-                android:id="@+id/dokter2"
-                android:layout_width="180dp"
-                android:layout_height="50dp"
-                android:textAlignment="center"
-                android:text="dr Robi"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:paddingLeft="10dp"
-                android:paddingBottom="20dp"/>
-            <TextView
-                android:id="@+id/jenisDokter2"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="Jantung"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                >
+        </TextView>
 
-            </TextView>
-        </LinearLayout>
-
-        <!--Dokter 3-->
-        <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:id="@+id/dokter3"
-                android:layout_width="180dp"
-                android:layout_height="50dp"
-                android:textAlignment="center"
-                android:text="dr Rizal"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:paddingLeft="10dp"
-                android:paddingBottom="20dp">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/jenisDokter3"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:text="Internis"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                >
-
-            </TextView>
-        </LinearLayout>
-
-        <!--Dokter 4-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:id="@+id/dokter4"
-                android:layout_width="180dp"
-                android:layout_height="50dp"
-                android:text="dr Ridwan"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:paddingLeft="10dp"
-                android:paddingBottom="20dp">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/jenisDokter4"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="Internis"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                >
-
-            </TextView>
-        </LinearLayout>
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:text="bidang"
 
-</FrameLayout>
+        >
+
+    </TextView>
+
+</LinearLayout>
+
+
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@android:color/white">-->
+
+<!--    &lt;!&ndash;    &lt;!&ndash;Toolbar&ndash;&gt;&ndash;&gt;-->
+<!--    &lt;!&ndash;    <androidx.appcompat.widget.Toolbar&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/toolbar"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:background="?attr/colorPrimary"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:elevation="4dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>&ndash;&gt;-->
+
+
+<!--    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:orientation="vertical"-->
+
+<!--        >-->
+
+<!--        &lt;!&ndash;Dokter 1&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/dokter1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="dr Anton "-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingBottom="20dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/jenisDokter1"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Jantung"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                >-->
+
+<!--            </TextView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;Dokter 2&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/dokter2"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="dr Robi"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingBottom="20dp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/jenisDokter2"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Jantung"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                >-->
+
+<!--            </TextView>-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;Dokter 3&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/dokter3"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="dr Rizal"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingBottom="20dp">-->
+
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/jenisDokter3"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="Internis"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                >-->
+
+<!--            </TextView>-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash;Dokter 4&ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/dokter4"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="dr Ridwan"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingBottom="20dp">-->
+
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/jenisDokter4"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Internis"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                >-->
+
+<!--            </TextView>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--</FrameLayout>-->
