@@ -23,8 +23,13 @@
     <string name="hubungi">Hubungi</string>
 
 
-    <string-array name="array_bahasa">
+    <string-array name="array_language">
         <item>Indonesia</item>
         <item>English</item>
+    </string-array>
+
+    <string-array name="array_theme">
+        <item>Day Mode</item>
+        <item>Night Mode</item>
     </string-array>
 </resources>

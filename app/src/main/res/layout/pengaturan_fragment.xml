@@ -49,14 +49,32 @@
 
             <Spinner
                 style="@style/Widget.AppCompat.Spinner.Underlined"
-                android:id="@+id/sp_dokter"
+                android:id="@+id/sp_doctor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6sp"
-                android:entries="@array/array_bahasa">
+                android:entries="@array/array_language">
 
             </Spinner>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="Pilih Tema"
+                >
+
+            </TextView>
+
+            <Spinner
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/sp_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6sp"
+                android:entries="@array/array_theme">
+
+            </Spinner>
         </LinearLayout>
 
         <LinearLayout
