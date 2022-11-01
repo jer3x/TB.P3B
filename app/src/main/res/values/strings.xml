@@ -12,6 +12,15 @@
     <string name="rumah_sakit_cepat_kembali_siap_melayani_mu">Rumah Sakit Cepat Kembali Siap Melayani-mu</string>
     <string name="pengaturan">Pengaturan</string>
     <string name="pilih_bahasa">Pilih Bahasa</string>
+    <string name="masukkan_nama_pasien">Masukkan Nama Pasien</string>
+    <string name="nama">Nama</string>
+    <string name="masukkan_nama_dokter">Masukkan Nama Dokter</string>
+    <string name="keluhan">Keluhan</string>
+    <string name="masukkan_keluhan">Masukkan Keluhan</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="pilh_tanggal">Pilh Tanggal</string>
+    <string name="pilih_waktu">Pilih Waktu</string>
+    <string name="hubungi">Hubungi</string>
 
 
     <string-array name="array_bahasa">

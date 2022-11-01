@@ -169,6 +169,27 @@ public class MainActivity extends AppCompatActivity {
                 ft.hide(this.buatPertemuanDial);
             }
         }
+
+        else if (page == 6){
+            if (this.buatPertemuan.isAdded()) {
+                ft.hide(this.buatPertemuan);
+                ft.show(this.mainFragment);
+            } else {
+                ft.add(R.id.fragment_container, this.buatPertemuan)
+                        .addToBackStack(null);
+            }
+            if (this.daftarDokterFragment.isAdded()) {
+                ft.hide(this.daftarDokterFragment);
+            }
+            if (this.buatPertemuanDial.isAdded()) {
+                ft.hide(this.buatPertemuanDial);
+            }
+            if (this.pengaturanFragment.isAdded()) {
+                ft.hide(this.pengaturanFragment);
+            }
+        }
+
+
         ft.commit();
         this.drawer.closeDrawers();
     }
