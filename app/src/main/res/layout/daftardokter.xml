@@ -14,19 +14,20 @@
 
         <ListView
             android:id="@+id/text_title"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:hint="Nama Dokter">
         </ListView>
 
-<!--        <ListView-->
-<!--            android:id="@+id/daftar_ahli"-->
-<!--            android:layout_width="163dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:hint="Ahli Dokter">-->
-<!--            -->
-<!--        </ListView>-->
+        <ListView
+            android:id="@+id/daftar_ahli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ahli Dokter">
+
+        </ListView>
 
     </LinearLayout>
 
