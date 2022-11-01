@@ -94,12 +94,13 @@ public class BuatPertemuan extends DialogFragment implements View.OnClickListene
     public void onClick(View view) {
         DialogFragment time = new BuatPertemuan();
         time.show(getChildFragmentManager(), "time picker");
-        Log.d("click", "clicked");
-        this.textViewTime.setText("");
+        Log.d("click", "cliked");
+//        this.textViewTime.setText("");
 
         DialogFragment date = new BuatPertemuan();
         if (view == this.buttonSimpan) {
             ((MainActivity) getActivity()).changePage(4);
+            Log.d("Click", "CLICKED BUTTON SIMPAN");
         }
 
     }
