@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
     private MainFragment mainFragment;
     private DaftarDokterFragment daftarDokterFragment;
     private FragmentManager fragmentManager;
-    private TimePickerFragment timePickerFragment;
+//    private TimePickerFragment timePickerFragment;
     private BuatPertemuan buatPertemuan;
     private BuatPertemuanDial buatPertemuanDial;
+    private PengaturanFragment pengaturanFragment;
+
 
     private Toolbar toolbar;
     private DrawerLayout drawer;
@@ -33,9 +35,10 @@ public class MainActivity extends AppCompatActivity {
         this.mainFragment = MainFragment.newInstance();
         this.daftarDokterFragment = DaftarDokterFragment.newInstance();
         this.fragmentManager = this.getSupportFragmentManager();
-        this.timePickerFragment = TimePickerFragment.newInstance();
+//        this.timePickerFragment = TimePickerFragment.newInstance();
         this.buatPertemuan = buatPertemuan.newInstance();
         this.buatPertemuanDial = BuatPertemuanDial.newInstance();
+        this.pengaturanFragment = PengaturanFragment.newInstance();
 
 
         //3. Instantiate FragmentManager
@@ -79,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
+            if (this.pengaturanFragment.isAdded()) {
+                ft.hide(this.pengaturanFragment);
+            }
         } else if (page == 2) {
             if (this.daftarDokterFragment.isAdded()) {
                 ft.show(this.daftarDokterFragment);
@@ -94,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
+            }
+            if (this.pengaturanFragment.isAdded()) {
+                ft.hide(this.pengaturanFragment);
             }
         } else if (page == 3) {
             if (this.buatPertemuan.isAdded()) {
@@ -112,11 +121,35 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
-        } else if (page == 4){
-            if (this.buatPertemuanDial.isAdded()) {
-                ft.show(this.buatPertemuanDial);
+            if (this.pengaturanFragment.isAdded()) {
+                ft.hide(this.pengaturanFragment);
+            }
+//        } else if (page == 4){
+//            if (this.buatPertemuanDial.isAdded()) {
+//                ft.show(this.buatPertemuanDial);
+//            } else {
+//                ft.add(R.id.fragment_container, this.buatPertemuanDial)
+//                        .addToBackStack(null);
+//            }
+//            if (this.buatPertemuan.isAdded()) {
+//                ft.hide(this.buatPertemuan);
+//            }
+//            if (this.daftarDokterFragment.isAdded()) {
+//                ft.hide(this.daftarDokterFragment);
+//            }
+//            if (this.mainFragment.isAdded()) {
+//                ft.hide(this.mainFragment);
+//            }
+//            if (this.pengaturanFragment.isAdded()) {
+//                ft.hide(this.pengaturanFragment);
+//            }
+
+        }
+        else if (page == 5){
+            if (this.pengaturanFragment.isAdded()) {
+                ft.show(this.pengaturanFragment);
             } else {
-                ft.add(R.id.fragment_container, this.buatPertemuanDial)
+                ft.add(R.id.fragment_container, this.pengaturanFragment)
                         .addToBackStack(null);
             }
             if (this.buatPertemuan.isAdded()) {
@@ -127,6 +160,9 @@ public class MainActivity extends AppCompatActivity {
             }
             if (this.mainFragment.isAdded()) {
                 ft.hide(this.mainFragment);
+            }
+            if (this.buatPertemuanDial.isAdded()) {
+                ft.hide(this.buatPertemuanDial);
             }
         }
         ft.commit();

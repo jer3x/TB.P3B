@@ -98,12 +98,12 @@ public class BuatPertemuan extends DialogFragment implements View.OnClickListene
         this.textViewTime.setText("");
 
         DialogFragment date = new BuatPertemuan();
-        if(view == this.buttonSimpan){
-            ((MainActivity)getActivity()).changePage(4);
+        if (view == this.buttonSimpan) {
+            ((MainActivity) getActivity()).changePage(4);
         }
 
     }
-
+}
 //    @NonNull
 //    @Override
 //    public Dialog onCreateDialog(Bundle saveInstanceState) {
@@ -127,4 +127,4 @@ public class BuatPertemuan extends DialogFragment implements View.OnClickListene
 
 //        return new TimePickerDialog(getActivity(), (TimePickerDialog.OnTimeSetListener) getActivity(), hour, minute, DateFormat.is24HourFormat(getActivity()));
 
-}
+
