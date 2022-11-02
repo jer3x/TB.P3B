@@ -13,14 +13,16 @@ import android.widget.SearchView;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class DaftarDokterFragment extends Fragment implements AdapterView.OnClickListener {
 
     private ListView listView;
     private ListView listView2;
     private SearchView searchView;
     private ArrayAdapter<String> adapter;
-    private Button buttonTAMBAH;
-    private Button buttonEDIT;
+    private FloatingActionButton buttonTAMBAH;
+    private FloatingActionButton buttonEDIT;
 
     String[] lst = {"Dr Budi", "Dr Ridwan", "Dr Andri"};
     String[] lst2 = {"Dr Budi", "Dr Ridwan"};
@@ -65,6 +67,10 @@ public class DaftarDokterFragment extends Fragment implements AdapterView.OnClic
 
 //            InputMethodManager imm = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
 //            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+        else if(view == this.buttonTAMBAH){
+            ((MainActivity)getActivity()).changePage(7);
+            Log.d("Click", "CLICKED BUTTON CLOSE");
         }
         else{
             ((MainActivity)getActivity()).changePage(1);

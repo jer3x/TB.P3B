@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private BuatPertemuanDial buatPertemuanDial;
     private PengaturanFragment pengaturanFragment;
     private EditDoctorFragment editDoctorFragment;
-
+    private TambahDokterFragment tambahDokterFragment;
 
     private Toolbar toolbar;
     private DrawerLayout drawer;
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         this.pengaturanFragment = PengaturanFragment.newInstance();
         this.editDoctorFragment = EditDoctorFragment.newInstance();
         this.daftarDokterFragment = DaftarDokterFragment.newInstance();
+        this.tambahDokterFragment = TambahDokterFragment.newInstance();
 
         //3. Instantiate FragmentManager
         this.fragmentManager = this.getSupportFragmentManager();
@@ -87,6 +88,13 @@ public class MainActivity extends AppCompatActivity {
             if (this.pengaturanFragment.isAdded()) {
                 ft.hide(this.pengaturanFragment);
             }
+            if (this.editDoctorFragment.isAdded()) {
+                ft.hide(this.editDoctorFragment);
+            }
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.hide(this.tambahDokterFragment);
+            }
+
         } else if (page == 2) {
             if (this.daftarDokterFragment.isAdded()) {
                 ft.show(this.daftarDokterFragment);
@@ -105,6 +113,12 @@ public class MainActivity extends AppCompatActivity {
             }
             if (this.pengaturanFragment.isAdded()) {
                 ft.hide(this.pengaturanFragment);
+            }
+            if (this.editDoctorFragment.isAdded()) {
+                ft.hide(this.editDoctorFragment);
+            }
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.hide(this.tambahDokterFragment);
             }
         } else if (page == 3) {
             if (this.buatPertemuan.isAdded()) {
@@ -126,7 +140,12 @@ public class MainActivity extends AppCompatActivity {
             if (this.pengaturanFragment.isAdded()) {
                 ft.hide(this.pengaturanFragment);
             }
-
+            if (this.editDoctorFragment.isAdded()) {
+                ft.hide(this.editDoctorFragment);
+            }
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.hide(this.tambahDokterFragment);
+            }
 
         } else if (page == 4){
             if (this.buatPertemuanDial.isAdded()) {
@@ -147,8 +166,12 @@ public class MainActivity extends AppCompatActivity {
             if (this.pengaturanFragment.isAdded()) {
                 ft.hide(this.pengaturanFragment);
             }
-
-
+            if (this.editDoctorFragment.isAdded()) {
+                ft.hide(this.editDoctorFragment);
+            }
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.hide(this.tambahDokterFragment);
+            }
 
         }
         else if (page == 5){
@@ -170,6 +193,12 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
+            if (this.editDoctorFragment.isAdded()) {
+                ft.hide(this.editDoctorFragment);
+            }
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.hide(this.tambahDokterFragment);
+            }
 
         }
 
@@ -186,19 +215,24 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
+            if (this.buatPertemuan.isAdded()) {
+                ft.hide(this.buatPertemuan);
+            }
             if (this.pengaturanFragment.isAdded()) {
                 ft.hide(this.pengaturanFragment);
             }
             if (this.mainFragment.isAdded()) {
                 ft.hide(this.mainFragment);
             }
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.hide(this.tambahDokterFragment);
+            }
         }
-
         else if (page == 7){
-            if (this.editDoctorFragment.isAdded()) {
-                ft.show(this.editDoctorFragment);
+            if (this.tambahDokterFragment.isAdded()) {
+                ft.show(this.tambahDokterFragment);
             } else {
-                ft.add(R.id.fragment_container, this.editDoctorFragment)
+                ft.add(R.id.fragment_container, this.tambahDokterFragment)
                         .addToBackStack(null);
             }
             if (this.daftarDokterFragment.isAdded()) {
@@ -207,10 +241,37 @@ public class MainActivity extends AppCompatActivity {
             if (this.buatPertemuanDial.isAdded()) {
                 ft.hide(this.buatPertemuanDial);
             }
+            if (this.buatPertemuan.isAdded()) {
+                ft.hide(this.buatPertemuan);
+            }
             if (this.pengaturanFragment.isAdded()) {
                 ft.hide(this.pengaturanFragment);
             }
+            if (this.mainFragment.isAdded()) {
+                ft.hide(this.mainFragment);
+            }
+            if (this.editDoctorFragment.isAdded()) {
+                ft.hide(this.editDoctorFragment);
+            }
         }
+
+//        else if (page == 7){
+//            if (this.editDoctorFragment.isAdded()) {
+//                ft.show(this.editDoctorFragment);
+//            } else {
+//                ft.add(R.id.fragment_container, this.editDoctorFragment)
+//                        .addToBackStack(null);
+//            }
+//            if (this.daftarDokterFragment.isAdded()) {
+//                ft.hide(this.daftarDokterFragment);
+//            }
+//            if (this.buatPertemuanDial.isAdded()) {
+//                ft.hide(this.buatPertemuanDial);
+//            }
+//            if (this.pengaturanFragment.isAdded()) {
+//                ft.hide(this.pengaturanFragment);
+//            }
+//        }
 
 //        else if (page == 7){
 //            if (this.editDoctorFragment.isAdded()) {
@@ -230,9 +291,6 @@ public class MainActivity extends AppCompatActivity {
 //                ft.hide(this.pengaturanFragment);
 //            }
 //        }
-
-
-
         ft.commit();
         this.drawer.closeDrawers();
     }

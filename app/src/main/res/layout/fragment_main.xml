@@ -18,8 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="90dp"
 
-            android:text="RS CEPAT KEMBALI"
+            android:text="@string/rs_cepat_kembali"
             android:textSize="25dp"
+            android:textStyle="bold"
 
             >
 
@@ -50,6 +51,7 @@
         android:layout_marginTop="580dp"
         android:text="Rumah Sakit Terbaik "
         android:textSize="20dp"
+        android:textStyle="bold"
         android:textAlignment="center"
 
         >

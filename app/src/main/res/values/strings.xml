@@ -21,6 +21,14 @@
     <string name="pilh_tanggal">Pilh Tanggal</string>
     <string name="pilih_waktu">Pilih Waktu</string>
     <string name="hubungi">Hubungi</string>
+    <string name="rs_cepat_kembali">RS CEPAT KEMBALI</string>
+    <string name="nama_dokter">Nama Dokter</string>
+    <string name="plus">PLUS</string>
+    <string name="cancel">CANCEL</string>
+    <string name="daftar_dokter">Daftar Dokter</string>
+    <string name="buat_pertemuan">Buat Pertemuan</string>
+    <string name="tambah_dokter">TAMBAH DOKTER</string>
+    <string name="pertemuan_anda">Pertemuan anda</string>
 
 
     <string-array name="array_language">

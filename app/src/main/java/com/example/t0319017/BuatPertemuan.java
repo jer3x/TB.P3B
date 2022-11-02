@@ -114,7 +114,7 @@ public class BuatPertemuan extends DialogFragment implements View.OnClickListene
 //            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
         else if(view == this.buttonClose){
-            ((MainActivity)getActivity()).changePage(6);
+            ((MainActivity)getActivity()).changePage(1);
             Log.d("Click", "CLICKED BUTTON CLOSE");
         }
         else{

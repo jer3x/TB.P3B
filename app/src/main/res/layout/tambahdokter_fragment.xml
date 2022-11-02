@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EDIT DOKTER"
+                android:text="@string/tambah_dokter"
                 android:layout_marginTop="50dp"
                 android:layout_gravity="center"
                 android:textStyle="bold"
@@ -129,7 +129,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonSIMPANEDITDOKTER"
+                android:id="@+id/buttonSIMPANTAMBAHDOKTER"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="110dp"
@@ -139,7 +139,7 @@
             </Button>
 
             <Button
-                android:id="@+id/buttonCANCELEDITDOKTER"
+                android:id="@+id/buttonCANCELETAMBAHDOKTER"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"

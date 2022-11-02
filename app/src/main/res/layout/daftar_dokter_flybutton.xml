@@ -6,12 +6,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daftar_dokter"
+        android:layout_marginLeft="150dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_judul"
+
+        >
+
+    </TextView>
+
     <ListView
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
-        android:layout_height="520dp"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="Nama Dokter"
+        android:hint="@string/nama_dokter"
 
         >
 
@@ -22,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,13 +42,15 @@
             android:layout_margin="16dp"
             android:src="@drawable/ic_add"
             app:fabSize="normal"
-            android:text="PLUS"
+
+            >
+<!--            android:text="@string/plus"-->
 
             >
 
-        </Button>
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_pen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,11 +59,25 @@
             android:layout_marginBottom="100dp"
             android:src="@drawable/ic_edit"
             app:fabSize="normal"
-            android:text="edit"
+            >
+<!--            android:text="edit"-->
             >
 
-        </Button>
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="200dp"
+            android:src="@android:drawable/ic_menu_delete"
+            app:fabSize="normal"
+            >
+            <!--            android:text="edit"-->
+            >
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 
