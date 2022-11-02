@@ -15,20 +15,37 @@
         <ListView
             android:id="@+id/text_title"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="520dp"
             android:layout_weight="1"
-            android:hint="Nama Dokter">
-        </ListView>
+            android:hint="Nama Dokter"
 
-        <ListView
-            android:id="@+id/daftar_ahli"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Ahli Dokter">
+            >
+
 
         </ListView>
 
+
+<!--        <ListView-->
+<!--            android:id="@+id/daftar_ahli"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="Ahli Dokter">-->
+
+<!--        </ListView>-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab_add"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:src="@drawable/ic_add"-->
+<!--            >-->
+
+<!--        </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
     </LinearLayout>
+
+
+
 
 </LinearLayout>

@@ -32,4 +32,11 @@
         <item>Day Mode</item>
         <item>Night Mode</item>
     </string-array>
+
+    <string-array name="array_doctor">
+        <item>Dr Budi</item>
+        <item>Dr Ridwan</item>
+        <item>Dr Andri</item>
+    </string-array>
+
 </resources>

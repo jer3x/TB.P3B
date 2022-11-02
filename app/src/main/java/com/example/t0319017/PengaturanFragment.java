@@ -18,12 +18,10 @@ import android.widget.TimePicker;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
-import java.util.Calendar;
-
 public class PengaturanFragment extends DialogFragment implements View.OnClickListener {
 
-    private Button buttonHOME;
-
+    private Button buttonSIMPAN;
+    private Button buttonCANCEL;
 
     public PengaturanFragment() {
         //Required empty public constuctor
@@ -36,9 +34,11 @@ public class PengaturanFragment extends DialogFragment implements View.OnClickLi
         //Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.pengaturan_fragment, container, false);
 
-        this.buttonHOME = view.findViewById(R.id.buttonHOME);
+        this.buttonSIMPAN = view.findViewById(R.id.button_SAVESETTING);
+        this.buttonSIMPAN.setOnClickListener(this);
 
-        this.buttonHOME.setOnClickListener(this);
+        this.buttonCANCEL = view.findViewById(R.id.button_CANCELSETTING);
+        this.buttonCANCEL.setOnClickListener(this);
         return view;
     }
 
@@ -50,9 +50,13 @@ public class PengaturanFragment extends DialogFragment implements View.OnClickLi
     @Override
     public void onClick(View view) {
 
-        if (view == this.buttonHOME) {
+        if (view == this.buttonSIMPAN) {
             ((MainActivity) getActivity()).changePage(5);
+            Log.d("Click", "PENGATURAN BERHASIL DISIMPAN");
         }
-
+        else{
+            ((MainActivity)getActivity()).changePage(1);
+            Log.d("Click", "PENGATURAN BATAL DISIMPAN");
+        }
     }
 }

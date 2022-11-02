@@ -95,13 +95,15 @@
 
         </TextView>
 
-        <EditText
-            android:layout_width="wrap_content"
+        <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/sp_theme"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Masukkan Nama Dokter"
-            >
+            android:layout_marginTop="6sp"
+            android:entries="@array/array_doctor">
 
-        </EditText>
+        </Spinner>
 
 
 
