@@ -70,7 +70,7 @@ public class DaftarDokterFragment extends Fragment implements AdapterView.OnClic
         }
         else if(view == this.buttonTAMBAH){
             ((MainActivity)getActivity()).changePage(7);
-            Log.d("Click", "CLICKED BUTTON CLOSE");
+            Log.d("Click", "CLICKED BUTTON TAMBAH");
         }
         else{
             ((MainActivity)getActivity()).changePage(1);

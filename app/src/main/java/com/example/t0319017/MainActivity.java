@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private PengaturanFragment pengaturanFragment;
     private EditDoctorFragment editDoctorFragment;
     private TambahDokterFragment tambahDokterFragment;
+
 
     private Toolbar toolbar;
     private DrawerLayout drawer;
