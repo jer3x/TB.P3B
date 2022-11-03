@@ -32,9 +32,9 @@
                 android:id="@+id/home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="HOME"
+                android:text="@string/home"
                 android:textColor="@color/white"
-                android:textSize="28sp"
+                android:textSize="@dimen/font_leftfragment"
                 android:paddingLeft="10dp"
                 android:paddingBottom="20dp"/>
         </LinearLayout>
@@ -48,9 +48,9 @@
                 android:id="@+id/pertemuan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PERTEMUAN"
+                android:text="@string/pertemuan"
                 android:textColor="@color/white"
-                android:textSize="28sp"
+                android:textSize="@dimen/font_leftfragment"
                 android:paddingLeft="10dp"
                 android:paddingBottom="20dp"/>
         </LinearLayout>
@@ -64,9 +64,9 @@
                 android:id="@+id/dokter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DOKTER"
+                android:text="@string/dokter"
                 android:textColor="@color/white"
-                android:textSize="28sp"
+                android:textSize="@dimen/font_leftfragment"
                 android:paddingLeft="10dp"
                 android:paddingBottom="20dp"/>
         </LinearLayout>
@@ -80,9 +80,9 @@
                 android:id="@+id/setting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PENGATURAN"
+                android:text="@string/pengaturan"
                 android:textColor="@color/white"
-                android:textSize="28sp"
+                android:textSize="@dimen/font_leftfragment"
                 android:paddingLeft="10dp"
                 android:paddingBottom="20dp">
 
@@ -99,9 +99,9 @@
                 android:id="@+id/exit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="EXIT"
+                android:text="@string/exit"
                 android:textColor="@color/white"
-                android:textSize="28sp"
+                android:textSize="@dimen/font_leftfragment"
                 android:paddingLeft="10dp"
                 android:paddingBottom="20dp">
 

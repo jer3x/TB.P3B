@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="font_judul">20sp</dimen>
+    <dimen name="font_rscepatkembali">25sp</dimen>
+    <dimen name="font_rumahsakitterbaik">20sp</dimen>
+    <dimen name="font_leftfragment">28sp</dimen>
+    <dimen name="font_editdokter">20sp</dimen>
 </resources>

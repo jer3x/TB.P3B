@@ -29,6 +29,26 @@
     <string name="buat_pertemuan">Buat Pertemuan</string>
     <string name="tambah_dokter">TAMBAH DOKTER</string>
     <string name="pertemuan_anda">Pertemuan anda</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="bidang">Bidang</string>
+    <string name="masukkan_bidang_dokter">Masukkan Bidang Dokter</string>
+    <string name="no_hp">No Hp</string>
+    <string name="masukkan_np_hp_dokter">Masukkan Np Hp Dokter</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="dokter">Dokter</string>
+    <string name="waktu">Waktu</string>
+    <string name="pengaturan2">PENGATURAN</string>
+    <string name="pilih_tema">Pilih Tema</string>
+    <string name="rumah_sakit_terbaik">Rumah Sakit Terbaik</string>
+    <string name="pertemuan">PERTEMUAN</string>
+    <string name="edit_dokter">EDIT DOKTER</string>
+    <string name="masukkan_nama2">Masukkan Nama</string>
+    <string name="bidang2">Bidang</string>
+    <string name="masukkan_bidang_dokter2">Masukkan Bidang Dokter</string>
+    <string name="no_hp2">No Hp</string>
+    <string name="masukkan_no_hp_dokter">Masukkan No Hp Dokter</string>
+    <string name="simpan2">SIMPAN</string>
+    <string name="title">title</string>
 
 
     <string-array name="array_language">

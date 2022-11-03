@@ -33,6 +33,7 @@
         android:text="@string/pertemuan_anda"
         android:textSize="@dimen/font_judul"
         android:layout_marginLeft="130dp"
+        android:textStyle="bold"
         >
 
     </TextView>
@@ -90,7 +91,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Dokter"
+            android:text="@string/dokter"
 
             >
 
@@ -159,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/pilh_tanggal"
-            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
             android:id="@+id/et_tgl"
 
             >
@@ -180,7 +181,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Waktu"
+            android:text="@string/waktu"
 
             >
 
@@ -189,7 +190,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
             android:hint="@string/pilih_waktu"
             android:id="@+id/tvTime"
             >

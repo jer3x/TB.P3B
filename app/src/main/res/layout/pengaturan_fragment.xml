@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PENGATURAN"
+                android:text="@string/pengaturan2"
                 android:textSize="@dimen/font_judul"
                 android:layout_marginTop="50dp"
                 android:layout_gravity="center"
@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:hint="Pilih Tema"
+                android:hint="@string/pilih_tema"
                 >
 
             </TextView>
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="500dp"
                 android:layout_marginLeft="110dp"
-                android:text="SIMPAN"
+                android:text="@string/simpan"
                 android:id="@+id/button_SAVESETTING"
                 >
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="500dp"
-                android:text="CANCEL"
+                android:text="@string/cancel"
                 >
 
             </Button>

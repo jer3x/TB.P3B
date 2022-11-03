@@ -1,7 +1,5 @@
 package com.example.t0319017;
 
-
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;

@@ -19,7 +19,7 @@
             android:layout_margin="90dp"
 
             android:text="@string/rs_cepat_kembali"
-            android:textSize="25dp"
+            android:textSize="@dimen/font_rscepatkembali"
             android:textStyle="bold"
 
             >
@@ -49,8 +49,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="580dp"
-        android:text="Rumah Sakit Terbaik "
-        android:textSize="20dp"
+        android:text="@string/rumah_sakit_terbaik"
+        android:textSize="@dimen/font_rumahsakitterbaik"
         android:textStyle="bold"
         android:textAlignment="center"
 
@@ -71,8 +71,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="110dp"
-            android:text="buat pertemuan "
+            android:layout_marginStart="110dp"
+            android:text="@string/buat_pertemuan"
             android:textAlignment="center"
             android:id="@+id/buttonPert"
 
