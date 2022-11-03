@@ -9,12 +9,15 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+
 public class PenyimpananDaftarDokter {
     protected SharedPreferences sharedPreferences;
     protected final static String NAMA_SHARED_PREF="sp_nilai_display";
     protected final static String KEY_NAMA="NAMA";
     protected final static String KEY_BIDANG="BIDANG";
     protected final static String KEY_NOHP="NOHP";
+
 
     public PenyimpananDaftarDokter(Context context){
         this.sharedPreferences = context.getSharedPreferences(NAMA_SHARED_PREF, 0);

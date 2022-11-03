@@ -55,7 +55,7 @@ public class PengaturanFragment extends DialogFragment implements View.OnClickLi
             Log.d("Click", "PENGATURAN BERHASIL DISIMPAN");
         }
         else{
-            ((MainActivity)getActivity()).changePage(1);
+            ((MainActivity)getActivity()).changePage(5);
             Log.d("Click", "PENGATURAN BATAL DISIMPAN");
         }
     }

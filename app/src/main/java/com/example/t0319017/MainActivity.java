@@ -8,11 +8,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+import java.io.File;
+import java.io.FileWriter;
+
+public class MainActivity extends AppCompatActivity{
 
     private MainFragment mainFragment;
     private DaftarDokterFragment daftarDokterFragment;
@@ -24,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
     private EditDoctorFragment editDoctorFragment;
     private TambahDokterFragment tambahDokterFragment;
 
+    private PenyimpananDaftarDokter penyimpananDaftarDokter;
+    private EditText editTextNama;
+    private EditText editTextBidang;
+    private EditText editTextNoHp;
+
+
+
+    private String file = "com.example.tubes";
 
     private Toolbar toolbar;
     private DrawerLayout drawer;
@@ -45,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         this.editDoctorFragment = EditDoctorFragment.newInstance();
         this.daftarDokterFragment = DaftarDokterFragment.newInstance();
         this.tambahDokterFragment = TambahDokterFragment.newInstance();
+
+        this.penyimpananDaftarDokter = new PenyimpananDaftarDokter(this);
+
+
 
         //3. Instantiate FragmentManager
         this.fragmentManager = this.getSupportFragmentManager();
@@ -68,6 +86,52 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
     }
+
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        this.penyimpananDaftarDokter.saveNama(editTextNama.getText().toString());
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        this.editTextNama.setText(this.penyimpananDaftarDokter.getNama());
+//
+//    }
+
+//    private void writeFile(File file, String param) {
+//        try {
+//            file.createNewFile();
+//            FileWriter writer = new FileWriter(file);
+//            writer.append(param);
+//            writer.flush();
+//            writer.close();
+//        } catch (Exception e) {
+//            Log.d("io_error", e.getMessage());
+//        }
+//        Log.d("storage_path", file.getAbsolutePath());
+//    }
+//
+//    private void storageExternal(String param, String filename, int opt){
+//        Log.d("storage_path", Environment.getExternalStorageState());
+//        File file = null;
+//        if (opt == 1){
+//            file = new File(this.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), filename);
+//        }
+//        this.writeFile(file, param);
+//    }
+//
+//    @Override
+//    public void onClick(View v) {
+//        if (v == b){
+//            String data = "Barang: " + this.namaBarang.getText().toString() + "\n" + "Harga: " + this.hargaBarang.getText().toString() + "\n" + "Keterangan: " + this.keterangan.getText().toString();
+//            this.storageExternal(data,"text.txt",1);
+//            Log.d("debug", "clicked!");
+//
+//        }
+//    }
+
 
     public void changePage(int page) {
         FragmentTransaction ft = this.fragmentManager.beginTransaction();

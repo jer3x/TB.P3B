@@ -65,8 +65,8 @@ public class TambahDokterFragment extends Fragment implements AdapterView.OnClic
 //            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
         else{
-            ((MainActivity)getActivity()).changePage(1);
-            Log.d("Click", "BERGANTI KE HALAMAN HOME");
+            ((MainActivity)getActivity()).changePage(2);
+            Log.d("Click", "BERGANTI KE HALAMAN DAFTAR DOKTER");
         }
     }
 }
